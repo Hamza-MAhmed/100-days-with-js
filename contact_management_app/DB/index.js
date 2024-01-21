@@ -10,4 +10,16 @@ const connectDB = async () => {
   }
 };
 
+// async function connectDB() {
+//   await mongoose
+//     .connect(process.env.MONGOURL)
+//     .then(() => {
+//       console.log('mongo db connected');
+//     })
+//     .catch((err) => {
+//       console.error(err.message);
+//       process.exit(1);
+//     });
+// }
+
 module.exports = connectDB;
